@@ -101,3 +101,48 @@ console.log(isNaN(NaN));
 
 console.log(parseInt("123.12"));
 console.log(parseFloat("123.12"));
+
+// Array
+var p =  new Array();
+p[0] = 1;
+p[1] = "Mike";
+console.log(typeof(p));
+console.log(p);
+
+// object
+var o = new Object();
+o.id = 10;
+o.Name = "Jack";
+
+console.log(typeof(o));
+console.log(o);
+
+var q1 = {
+id:10,
+name:"Jones"
+}
+
+q1.start = function(name) {
+    console.log("start a " + name);
+}
+
+console.log(typeof(q1));
+console.log(q1);
+q1.start("car");
+
+// catch exception
+try {
+    adddlert("Welcome guest!");
+} catch(err) {
+    console.log("error: " + err);
+}
+
+// Date
+var date = new Date().getFullYear();
+console.log(date);
+
+// Math
+console.log(Math.round(4.7));
+console.log(Math.random());
+
+console.error("this is a error information.")；
